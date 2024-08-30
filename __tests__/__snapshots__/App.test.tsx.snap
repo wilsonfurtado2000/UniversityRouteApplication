@@ -1,0 +1,49 @@
+
+exports[`App renders as logged in 1`] = `
+<div>
+  <ScreenTime />
+  <div
+    isLoggedIn={true}
+  >
+    AppNavigator
+  </div>
+</div>
+`;
+
+exports[`App renders as logged out 1`] = `
+<div>
+  <ScreenTime />
+  <div
+    isLoggedIn={false}
+  >
+    AppNavigator
+  </div>
+</div>
+`;
+
+exports[`App renders correctly 1`] = `
+<div>
+  <ScreenTime />
+  <AppNavigator
+    isLoggedIn={false}
+  />
+</div>
+`;
+
+exports[`App with different authentication states renders as logged in 1`] = `
+<div>
+  <ScreenTime />
+  <AppNavigator
+    isLoggedIn={true}
+  />
+</div>
+`;
+
+exports[`App with different authentication states renders as logged out 1`] = `
+<div>
+  <ScreenTime />
+  <AppNavigator
+    isLoggedIn={false}
+  />
+</div>
+`;
