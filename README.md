@@ -1,7 +1,7 @@
 # UniversityRouteApplication
 
 
-# Testing Guide for My React Native Project
+# Testing Guide
 
 This guide provides detailed instructions for setting up your macOS environment and testing the application. Follow these steps carefully to ensure everything is set up correctly and the app runs smoothly.
 
@@ -27,20 +27,15 @@ or
 
 yarn global add react-native-cli
 ```
-### 4. Install Java Development Kit (JDK)
 
-The Java Development Kit (JDK) is required for Android development.
-
-Download and install it from https://www.oracle.com/java/technologies/downloads/#java11 (Please Download MacOS package)
-
-### 5. Install Xcode 
+### 4. Install Xcode 
 
 Xcode is required for iOS development. It includes the iOS SDK, which is essential for building and running iOS apps.
 
 Download and install Xcode from the Mac App Store.
 Open Xcode and go to Preferences > Locations to ensure the Command Line Tools are installed and selected.
 
-### 6. Install Ruby and CocoaPods 
+### 5. Install Ruby and CocoaPods 
 
 #### Ruby: macOS comes with Ruby pre-installed, but you may want to manage Ruby versions using rbenv or rvm.
 #### rbenv - https://github.com/rbenv/rbenv
@@ -72,7 +67,7 @@ rbenv global 3.1.2
 sudo gem install cocoapods
 ```
 
-### 7. iOS Simulator Setup
+### 6. Install IOS Simulator
 
 To test the iOS application, you’ll need an iOS simulator.
 
@@ -80,12 +75,12 @@ Open Xcode.
 Go to Preferences > Components.
 Download a simulator for the latest iOS version
 
-### Project Setup
+### 7. Project Setup
 #### 1. Clone the Project Repository
 First, clone the repository to your local machine.
 
 ```bash
-git clone [https://github.com/yourusername/your-repo.git](https://github.com/wilsonfurtado2000/UniversityRouteApplication.git)
+git clone https://github.com/your-github-username/UniversityRouteApplication.git
 cd UniversityRouteApplication
 ```
 
@@ -105,7 +100,7 @@ pod install
 cd ..
 ```
 
-### Running the Application
+### 8. Running the Application
 
 #### 1. Start the Metro Bundler
 
@@ -124,7 +119,7 @@ This will start the Metro Bundler, and you should leave this terminal window ope
 
 #### 2. Run the Application on iOS (simulator)
 
-### Note: The AppleCorelocation API doesn't work when testing on a iPhone simulator, as a result it is necessary to the application on a physical Iphone Device In order to test all the features of the application.
+#### Note: The AppleCorelocation API doesn't work when testing on a iPhone simulator, as a result it is necessary to the application on a physical Iphone Device In order to test all the features of the application.
 
 
 ```bash
