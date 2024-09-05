@@ -53,32 +53,6 @@ const MapScreen = () => {
         }
         if (navigationStarted) {
           setPosition([location.latitude, location.longitude]);
-
-          // if (destination) {
-          //   const distanceToDestination = calculateDistance(currentPosition, [
-          //     destination.coordinates.lat,
-          //     destination.coordinates.lon,
-          //   ]);
-
-          //   if (distanceToDestination <= destinationProximityThreshold) {
-          //     if (!hasReachedDestination) {
-          //       // Prevent multiple alerts
-          //       setHasReachedDestination(true);
-          //       Alert.alert(
-          //         'Destination Reached',
-          //         'You have arrived at your destination.',
-          //         [{text: 'OK', onPress: resetSelection}],
-          //       );
-          //     }
-          //   }
-          // }
-
-          // if (source.name === 'Your current location') {
-          //   setSource({
-          //     name: 'Your current location',
-          //     coordinates: {lat: location.latitude, lon: location.longitude},
-          //   });
-          // }
         }
         console.log('Updated location: from React native side', location);
       },
@@ -93,28 +67,6 @@ const MapScreen = () => {
       RNLocationManager.stopUpdatingLocation();
     };
   }, [routingProfile, navigationStarted]);
-
-  // const calculateDistance = (coords1, coords2) => {
-  //   const toRad = x => (x * Math.PI) / 180;
-
-  //   const lat1 = coords1[0];
-  //   const lon1 = coords1[1];
-  //   const lat2 = coords2[0];
-  //   const lon2 = coords2[1];
-
-  //   const R = 6371e3; // meters
-  //   const φ1 = toRad(lat1);
-  //   const φ2 = toRad(lat2);
-  //   const Δφ = toRad(lat2 - lat1);
-  //   const Δλ = toRad(lon2 - lon1);
-
-  //   const a =
-  //     Math.sin(Δφ / 2) * Math.sin(Δφ / 2) +
-  //     Math.cos(φ1) * Math.cos(φ2) * Math.sin(Δλ / 2) * Math.sin(Δλ / 2);
-  //   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-
-  //   return R * c;
-  // };
 
   const handleSearch = text => {
     setSearchQuery(text);
